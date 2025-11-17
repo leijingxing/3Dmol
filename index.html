@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D 分子结构教学平台</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="molecules.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="title-group">
+          <div class="logo-mark">Chem</div>
+          <div>
+            <h1>3D 分子结构教学平台</h1>
+            <p class="subtitle">基于 3Dmol.js 的交互式中学化学演示工具</p>
+          </div>
+        </div>
+        <div class="header-tags">
+          <span class="tag">中学化学</span>
+          <span class="tag">3D 可视化</span>
+          <span class="tag">课堂演示</span>
+        </div>
+      </header>
+
+      <main class="main-layout">
+        <section class="sidebar panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-label">分子库</p>
+              <h2>按需快速查找</h2>
+            </div>
+            <p class="panel-desc">
+              支持按名称、化学式与标签搜索，并按类别筛选。
+            </p>
+          </div>
+
+          <label class="search-box" for="moleculeSearch">
+            <span>搜索分子</span>
+            <input
+              id="moleculeSearch"
+              type="search"
+              placeholder="输入名称、化学式或标签"
+            />
+          </label>
+
+          <div class="chip-group" id="categoryChips" role="tablist"></div>
+
+          <div class="list-header">
+            <h3>分子列表</h3>
+            <span id="resultCount" class="muted-text">共 0 个</span>
+          </div>
+
+          <div class="molecule-list" id="moleculeList"></div>
+          <div class="empty-state hidden" id="listEmpty">
+            <p>没有符合条件的分子。</p>
+            <small>尝试清空搜索或切换类别。</small>
+          </div>
+        </section>
+
+        <section class="viewer-section panel">
+          <div class="viewer-header">
+            <div>
+              <p class="muted-text" id="currentCategoryLabel">尚未选择</p>
+              <h2 id="currentName">请先选择一个分子</h2>
+              <p class="formula-text" id="currentFormula">—</p>
+            </div>
+            <div class="viewer-actions">
+              <button id="styleToggle" class="ghost" disabled>
+                切换显示样式
+              </button>
+              <button id="resetView" class="ghost" disabled>重置视角</button>
+            </div>
+          </div>
+
+          <div class="viewer-canvas" id="viewer">
+            <div class="viewer-placeholder" id="viewerPlaceholder">
+              <p>请选择左侧列表中的一个分子开始展示。</p>
+              <small>可拖动旋转、滚轮缩放、右键平移。</small>
+            </div>
+          </div>
+
+          <p class="viewer-hint">
+            鼠标左键：旋转 · 滚轮：缩放 · 右键：平移 · 视角乱了？使用“重置视角”
+          </p>
+        </section>
+
+        <section class="info-section panel">
+          <div class="info-meta">
+            <div>
+              <span class="meta-label">类别</span>
+              <p id="metaCategory">—</p>
+            </div>
+            <div>
+              <span class="meta-label">常见物态</span>
+              <p id="metaPhase">—</p>
+            </div>
+            <div>
+              <span class="meta-label">标签</span>
+              <div id="metaTags" class="meta-tags">—</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div>
+              <h3>结构说明</h3>
+              <p id="structureDescription" class="info-body">
+                选择一个分子后将展示构型、键角和极性特点等信息。
+              </p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div>
+              <h3>教学提示</h3>
+              <ul id="teachingTips" class="tips-list">
+                <li>右侧将列出课堂提问或对比建议。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div>
+              <h3>当前渲染样式</h3>
+              <p id="styleLabel" class="info-body">尚未载入模型</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
