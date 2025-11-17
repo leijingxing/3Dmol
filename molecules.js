@@ -386,6 +386,217 @@ H -1.240 -2.148 0.000
 H 1.240 -2.148 0.000`,
     defaultStyle: "ball_and_stick",
   },
+  {
+    id: "o3",
+    nameZh: "臭氧",
+    nameEn: "Ozone",
+    formula: "O₃",
+    category: "gas",
+    phase: "气体",
+    tags: ["弯曲形", "强氧化", "臭氧层"],
+    structureDescription:
+      "由三个氧原子构成的弯曲分子，可展示离域 π 键与共振对键长的影响。",
+    teachingTips: [
+      "结合臭氧层保护地球的案例，把微观结构与宏观环境联系起来。",
+      "与 O₂ 对比说明键长与化学活性之间的关系。",
+    ],
+    dataFormat: "xyz",
+    data: `3
+Ozone molecule
+O -1.200 0.000 0.000
+O 0.000 0.370 0.000
+O 1.150 -0.370 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "bf3",
+    nameZh: "三氟化硼",
+    nameEn: "Boron Trifluoride",
+    formula: "BF₃",
+    category: "nonpolar",
+    phase: "气体",
+    tags: ["平面三角形", "空轨道", "路易斯酸"],
+    structureDescription:
+      "典型的平面三角形分子，B 原子缺电子，可引入“空轨道接受电子对”的概念。",
+    teachingTips: [
+      "与 NH₃ 的孤对电子成对使用，理解配位键的形成机制。",
+      "强调“非极性”不等于“不反应”，引导讨论 Lewis 酸碱理论。",
+    ],
+    dataFormat: "xyz",
+    data: `4
+Boron trifluoride
+B 0.000 0.000 0.000
+F 0.000 1.300 0.000
+F -1.126 -0.650 0.000
+F 1.126 -0.650 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "pf5",
+    nameZh: "五氟化磷",
+    nameEn: "Phosphorus Pentafluoride",
+    formula: "PF₅",
+    category: "feature",
+    phase: "气体",
+    tags: ["三角双锥", "扩展八隅体", "VSEPR"],
+    structureDescription:
+      "展示三角双锥构型的典型案例，可配合电子域理论讲解扩展八隅体。",
+    teachingTips: [
+      "让学生找出轴向与赤道向 F 的差别，分析键角变化原因。",
+      "对比 PF₅ 与 PCl₅ 在不同温度下的稳定性，引出分子运动。",
+    ],
+    dataFormat: "xyz",
+    data: `6
+Phosphorus pentafluoride
+P 0.000 0.000 0.000
+F 0.000 0.000 2.000
+F 0.000 0.000 -2.000
+F 1.700 0.000 0.000
+F -0.850 1.472 0.000
+F -0.850 -1.472 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "sf6",
+    nameZh: "六氟化硫",
+    nameEn: "Sulfur Hexafluoride",
+    formula: "SF₆",
+    category: "feature",
+    phase: "气体",
+    tags: ["八面体", "绝缘气体", "扩展八隅体"],
+    structureDescription:
+      "八面体对称性极高，适合展示 d 轨道参与成键和气体绝缘材料的宏观应用。",
+    teachingTips: [
+      "与 PF₅ 串联，让学生比较三角双锥与八面体的电荷分布差异。",
+      "结合 SF₆ 在高压电力设备中的应用，强化“结构决定性质”。",
+    ],
+    dataFormat: "xyz",
+    data: `7
+Sulfur hexafluoride
+S 0.000 0.000 0.000
+F 1.700 0.000 0.000
+F -1.700 0.000 0.000
+F 0.000 1.700 0.000
+F 0.000 -1.700 0.000
+F 0.000 0.000 1.700
+F 0.000 0.000 -1.700`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "h2so4",
+    nameZh: "硫酸",
+    nameEn: "Sulfuric Acid",
+    formula: "H₂SO₄",
+    category: "acidbase",
+    phase: "液体",
+    tags: ["强酸", "四面体", "脱水性"],
+    structureDescription:
+      "中心 S 与四个 O 构成近似四面体，其中两个为羟基，可用于解释多元酸的逐级电离。",
+    teachingTips: [
+      "结合“浓硫酸的吸水性”实验，讨论羟基间的氢键可能性。",
+      "提醒学生注意两个 H 都连在 O 上，而非直接连在 S 上。",
+    ],
+    dataFormat: "xyz",
+    data: `7
+Sulfuric acid
+S 0.000 0.000 0.000
+O 1.300 0.000 0.000
+O -1.300 0.000 0.000
+O 0.000 1.250 0.000
+O 0.000 -1.250 0.000
+H 0.000 2.150 0.200
+H 0.000 -2.150 -0.200`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "nacl_cluster",
+    nameZh: "氯化钠晶格单元",
+    nameEn: "Sodium Chloride (unit cluster)",
+    formula: "NaCl",
+    category: "feature",
+    phase: "固体",
+    tags: ["离子晶体", "立方堆积", "配位数"],
+    structureDescription:
+      "以四个离子点阵展示 NaCl 的立方晶胞关系，便于说明“每个 Na⁺ 被六个 Cl⁻ 包围”的概念。",
+    teachingTips: [
+      "可让学生想象将该单元沿三个方向平移，即得到完整晶格。",
+      "与金刚石、石墨的共价网络结构对比，强化晶体类型差异。",
+    ],
+    dataFormat: "xyz",
+    data: `4
+Sodium chloride cluster
+Na -1.400 -1.400 -1.400
+Na 1.400 1.400 -1.400
+Cl -1.400 1.400 1.400
+Cl 1.400 -1.400 1.400`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "c6h12o6",
+    nameZh: "葡萄糖",
+    nameEn: "Glucose",
+    formula: "C₆H₁₂O₆",
+    category: "organic",
+    phase: "固体",
+    tags: ["环状结构", "多羟基", "生物化学"],
+    structureDescription:
+      "六元环呈椅式构型，布满羟基，是讲解碳水化合物以及多官能团协同作用的绝佳例子。",
+    teachingTips: [
+      "提示学生观察“极性头遍布”的特点，推导葡萄糖易溶于水的原因。",
+      "与乙醇或乙酸对照，思考官能团数量如何影响沸点与互溶性。",
+    ],
+    dataFormat: "xyz",
+    data: `24
+Glucose molecule
+C 0.000 0.000 0.000
+C 1.220 0.200 -0.120
+C 2.270 -0.500 0.580
+C 1.820 -1.850 0.220
+C 0.500 -1.840 -0.720
+C -0.520 -0.630 -1.200
+O -0.850 0.900 0.300
+O 2.550 0.750 1.200
+O 3.200 -1.200 -0.200
+O 2.600 -2.700 0.950
+O 0.100 -2.950 -0.100
+O -1.600 -1.500 -1.900
+H 0.110 0.340 1.040
+H 1.300 1.270 -0.420
+H 2.340 -0.100 1.580
+H 2.520 -2.070 -0.740
+H 0.260 -1.270 -1.720
+H -0.100 0.020 -1.900
+H -1.230 1.580 -0.200
+H 3.060 0.930 2.050
+H 3.950 -1.650 -0.630
+H 3.080 -3.040 1.650
+H 0.000 -3.420 0.750
+H -2.050 -0.980 -2.500`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "so3",
+    nameZh: "三氧化硫",
+    nameEn: "Sulfur Trioxide",
+    formula: "SO₃",
+    category: "feature",
+    phase: "液体",
+    tags: ["平面三角形", "酸酐", "强氧化"],
+    structureDescription:
+      "平面三角形分子，是硫酸的酸酐，可与 H₂SO₄ 组成“酸酐—酸”对。",
+    teachingTips: [
+      "展示从 SO₃ 加水生成 H₂SO₄ 的过程，帮助学生建立结构演化图。",
+      "与 BF₃ 一同讲解平面三角形分子的对称性和极性判断。",
+    ],
+    dataFormat: "xyz",
+    data: `4
+Sulfur trioxide
+S 0.000 0.000 0.000
+O 1.320 0.000 0.000
+O -0.660 1.143 0.000
+O -0.660 -1.143 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
 ];
 
 window.MOLECULE_CATEGORIES = MOLECULE_CATEGORIES;
