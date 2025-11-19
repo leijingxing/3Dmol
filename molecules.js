@@ -597,6 +597,225 @@ O -0.660 1.143 0.000
 O -0.660 -1.143 0.000`,
     defaultStyle: "ball_and_stick",
   },
+  {
+    id: "co",
+    nameZh: "一氧化碳",
+    nameEn: "Carbon Monoxide",
+    formula: "CO",
+    category: "gas",
+    phase: "气体",
+    tags: ["双原子", "极性", "有毒"],
+    structureDescription: "碳氧之间存在三键（其中一个是配位键），极性较小但仍为极性分子。",
+    teachingTips: [
+      "与 N₂ 互为等电子体，比较二者的性质差异。",
+      "强调其与血红蛋白结合的危险性。",
+    ],
+    dataFormat: "xyz",
+    data: `2
+Carbon Monoxide
+C 0.000 0.000 0.000
+O 1.128 0.000 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "cl2",
+    nameZh: "氯气",
+    nameEn: "Chlorine",
+    formula: "Cl₂",
+    category: "gas",
+    phase: "气体",
+    tags: ["双原子", "有毒", "卤素"],
+    structureDescription: "黄绿色有毒气体，双原子分子，氧化性强。",
+    teachingTips: [
+      "与氢气反应生成 HCl，演示光照爆炸实验的微观基础。",
+      "讨论卤素单质性质的递变规律。",
+    ],
+    dataFormat: "xyz",
+    data: `2
+Chlorine
+Cl -0.995 0.000 0.000
+Cl 0.995 0.000 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "h2o2",
+    nameZh: "过氧化氢",
+    nameEn: "Hydrogen Peroxide",
+    formula: "H₂O₂",
+    category: "polar",
+    phase: "液体",
+    tags: ["二面角", "极性", "氧化剂"],
+    structureDescription: "像一本半打开的书，两个 O-H 键不在同一平面上，具有特定的二面角。",
+    teachingTips: [
+      "展示“手性”或不对称性，说明其极性来源。",
+      "与其分解产物 H₂O 和 O₂ 对比结构。",
+    ],
+    dataFormat: "xyz",
+    data: `4
+Hydrogen Peroxide
+O 0.000 0.730 -0.050
+O 0.000 -0.730 -0.050
+H 0.830 0.880 0.400
+H -0.830 -0.880 0.400`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "pcl3",
+    nameZh: "三氯化磷",
+    nameEn: "Phosphorus Trichloride",
+    formula: "PCl₃",
+    category: "polar",
+    phase: "液体",
+    tags: ["三角锥", "极性", "农药原料"],
+    structureDescription: "三角锥形分子，P 原子上方有一对孤对电子。",
+    teachingTips: [
+      "与 NH₃ 对比，讨论中心原子半径对键角的影响。",
+      "作为合成有机磷农药的重要原料。",
+    ],
+    dataFormat: "xyz",
+    data: `4
+Phosphorus Trichloride
+P 0.000 0.000 0.500
+Cl 0.000 1.700 -0.200
+Cl 1.470 -0.850 -0.200
+Cl -1.470 -0.850 -0.200`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "ccl4",
+    nameZh: "四氯化碳",
+    nameEn: "Carbon Tetrachloride",
+    formula: "CCl₄",
+    category: "nonpolar",
+    phase: "液体",
+    tags: ["正四面体", "非极性", "溶剂"],
+    structureDescription: "正四面体结构，C-Cl 键极性被对称性抵消，整体非极性。",
+    teachingTips: [
+      "与 CH₄ 结构完全一致，只是 H 换成了 Cl。",
+      "作为优良的非极性溶剂（萃取剂）。",
+    ],
+    dataFormat: "xyz",
+    data: `5
+Carbon Tetrachloride
+C 0.000 0.000 0.000
+Cl 1.760 0.000 0.000
+Cl -0.587 1.660 0.000
+Cl -0.587 -0.830 1.440
+Cl -0.587 -0.830 -1.440`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "hcho",
+    nameZh: "甲醛",
+    nameEn: "Formaldehyde",
+    formula: "HCHO",
+    category: "organic",
+    phase: "气体",
+    tags: ["平面三角形", "醛基", "防腐"],
+    structureDescription: "平面三角形，C=O 双键，最简单的醛。",
+    teachingTips: [
+      "装修污染的主要来源之一。",
+      "观察 C=O 双键与 C-H 单键的空间分布。",
+    ],
+    dataFormat: "xyz",
+    data: `4
+Formaldehyde
+C 0.000 0.000 0.000
+O 1.210 0.000 0.000
+H -0.600 0.940 0.000
+H -0.600 -0.940 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "acetone",
+    nameZh: "丙酮",
+    nameEn: "Acetone",
+    formula: "CH₃COCH₃",
+    category: "organic",
+    phase: "液体",
+    tags: ["酮羰基", "溶剂", "挥发性"],
+    structureDescription: "最简单的酮，羰基碳与两个甲基相连。",
+    teachingTips: [
+      "指甲油去除剂的主要成分。",
+      "与乙醛互为同分异构体吗？（不是，乙醛是 C2，这是 C3）与丙醛互为同分异构体。",
+    ],
+    dataFormat: "xyz",
+    data: `10
+Acetone
+C 0.000 0.000 0.000
+O 1.220 0.000 0.000
+C -0.750 1.300 0.000
+C -0.750 -1.300 0.000
+H -0.250 1.800 0.870
+H -0.250 1.800 -0.870
+H -1.800 1.300 0.000
+H -0.250 -1.800 0.870
+H -0.250 -1.800 -0.870
+H -1.800 -1.300 0.000`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "diamond",
+    nameZh: "金刚石（晶胞）",
+    nameEn: "Diamond",
+    formula: "C",
+    category: "feature",
+    phase: "固体",
+    tags: ["原子晶体", "硬度", "四面体网"],
+    structureDescription: "每个碳原子与周围四个碳原子形成正四面体结构，延伸成空间网状。",
+    teachingTips: [
+      "天然最硬物质，与石墨同素异形体对比。",
+      "键角 109.5°。",
+    ],
+    dataFormat: "xyz",
+    data: `14
+Diamond Fragment
+C 0.000 0.000 0.000
+C 0.890 0.890 0.890
+C 0.890 -0.890 -0.890
+C -0.890 0.890 -0.890
+C -0.890 -0.890 0.890
+C 1.780 0.000 1.780
+C 1.780 1.780 0.000
+C 0.000 1.780 1.780
+C 2.670 0.890 0.890
+C 0.890 2.670 0.890
+C 0.890 0.890 2.670
+C -1.780 0.000 -1.780
+C -1.780 -1.780 0.000
+C 0.000 -1.780 -1.780`,
+    defaultStyle: "ball_and_stick",
+  },
+  {
+    id: "graphite",
+    nameZh: "石墨（层状）",
+    nameEn: "Graphite",
+    formula: "C",
+    category: "feature",
+    phase: "固体",
+    tags: ["混合晶体", "层状", "导电"],
+    structureDescription: "层状结构，层内正六边形，层间范德华力。",
+    teachingTips: [
+      "质软，可做润滑剂。",
+      "层内导电，层间不导电（各向异性）。",
+    ],
+    dataFormat: "xyz",
+    data: `12
+Graphite Layer Fragment
+C 0.000 1.420 0.000
+C 1.230 0.710 0.000
+C 1.230 -0.710 0.000
+C 0.000 -1.420 0.000
+C -1.230 -0.710 0.000
+C -1.230 0.710 0.000
+C 0.000 1.420 3.350
+C 1.230 0.710 3.350
+C 1.230 -0.710 3.350
+C 0.000 -1.420 3.350
+C -1.230 -0.710 3.350
+C -1.230 0.710 3.350`,
+    defaultStyle: "ball_and_stick",
+  },
 ];
 
 window.MOLECULE_CATEGORIES = MOLECULE_CATEGORIES;
